@@ -39,7 +39,7 @@
                 <label for="ciudad">Ciudad</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="estadio" type="number" class="form-control" id="estadio" value="{{$equipo->estadio}}" disabled>
+                <input name="estadio" type="text" class="form-control" id="estadio" value="{{$equipo->estadio}}" disabled>
                 <label for="estadio">Estadio</label>
             </div>
             <div class="form-floating mb-3">

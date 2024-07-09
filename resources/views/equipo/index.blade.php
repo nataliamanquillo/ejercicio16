@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
-                                    <form action="{{route('viajero.destroy', $viajero->id)}}" method="post">
+                                    <form action="{{route('equipo.destroy', $equipo->id)}}" method="post">
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-danger">Eliminar</button>

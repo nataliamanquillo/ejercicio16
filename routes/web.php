@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EquipoController;
 use App\Http\Controllers\PresidenteController;
+use App\Models\Presidente;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,15 @@ Route::get('equipo/{equipo}/editar',[EquipoController::class,'edit'])->name('equ
 Route::put('equipo/{equipo}',[EquipoController::class,'update'])->name('equipo.update');
 
 Route::delete('equipo/{equipo}',[EquipoController::class,'destroy'])->name('equipo.destroy');
+
+
+//rutas presidente
+
+Route::get('presidente/listar',[PresidenteController::class, 'index'])->name('presidente.index');
+Route::get('presidente/create',[PresidenteController::class,'create'])->name('presidente.create');
+Route::post('presidente/store',[PresidenteController::class,'store'])->name('presidente.store');
+Route::get('presidente/{presidente}',[PresidenteController::class,'show'])->name('presidente.show');
+Route::get('presidente/{presidente}/editar',[PresidenteController::class,'edit'])->name('presidente.edit');
+Route::put('presidente/{presidente}',[PresidenteController::class,'update'])->name('presidente.update');
+
+Route::delete('presidente/{presidente}',[PresidenteController::class,'destroy'])->name('presidente.destroy');

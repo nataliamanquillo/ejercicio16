@@ -30,10 +30,11 @@
         <thead>
           <tr>
             <th scope="col">Id</th>
-            <th scope="col">Número de plazas</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Otros Datos</th>
-            <th scope="col">Viajeros</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Año</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Equipos</th>
             <th scope="col">Acciones</th>
           </tr>
         </thead>
@@ -43,9 +44,10 @@
 
                 <tr>
                     <th scope="row">{{ $presidente->id }}</th>
-                    <td>{{ $presidente->num_plazas }}</td>
-                    <td>{{ $presidente->fecha }}</td>
-                    <td>{{ $presidente->otros_datos }}</td>
+                    <td>{{ $presidente->nombre }}</td>
+                    <td>{{ $presidente->apellidos }}</td>
+                    <td>{{ $presidente->ano }}</td>
+                    <td>{{ $presidente->fecha_nac }}</td>
                     <td>{{ $presidente->equipo_id }}</td>
                   
                     {{-- <td>{{$viaje->viajero_id->viajeros->nombre }}</td> --}}

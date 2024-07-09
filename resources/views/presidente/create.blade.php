@@ -36,20 +36,20 @@
                 <label for="nombre">Nombre</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="apellidos" type="date" class="form-control" id="apellidos" placeholder="apellidos">
+                <input name="apellidos" type="text" class="form-control" id="apellidos" placeholder="apellidos">
                 <label for="apellidos">Apellidos</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="ano" type="text" class="form-control" id="ano" placeholder="año">
+                <input name="ano" type="integer" class="form-control" id="ano" placeholder="año">
                 <label for="ano">Año</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="fecha_nac" type="text" class="form-control" id="fecha_nac" placeholder="fecha_nac">
+                <input name="fecha_nac" type="date" class="form-control" id="fecha_nac" placeholder="fecha_nac">
                 <label for="fecha_nac">Fecha de Nacimiento</label>
             </div>
 
             <div class="form-floating">
-                <select id="viajero_id" name="viajero_id" class="form-select mb-3"  form="formulario" aria-label="Floating label select example">
+                <select id="equipo_id" name="equipo_id" class="form-select mb-3"  form="formulario" aria-label="Floating label select example">
                   <option selected>Selecciona una opción</option>
                   @foreach($equipos as $equipo)
                     <option  value="{{$equipo->id}}">{{$equipo->nombre}}</option>

@@ -25,7 +25,7 @@ public function store(Request $request){
     $equipo->ciudad = $request->ciudad;
     $equipo->estadio = $request->estadio;
     $equipo->aforo = $request->aforo;
-    $equipo->año = $request->año;
+    $equipo->ano = $request->ano;
     $equipo->save();
     return redirect()->route('equipo.index');
 }
@@ -47,7 +47,7 @@ public function update(Request $request, Equipo $equipo){
     $equipo->ciudad= $request->ciudad;
     $equipo->estadio= $request->estadio;
     $equipo->aforo= $request->aforo;
-    $equipo->año= $request->año;
+    $equipo->ano= $request->ano;
     $equipo->save();
     return redirect()->route('equipo.index');
 }

@@ -38,15 +38,15 @@
                 <label for="nombre">Nombre</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="apellidos" type="date" class="form-control" id="apellidos" value="{{old('apellidos', $presidente->apellidos)}}">
+                <input name="apellidos" type="text" class="form-control" id="apellidos" value="{{old('apellidos', $presidente->apellidos)}}">
                 <label for="apellidos">Apellidos</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="ano" type="text" class="form-control" id="ano" value="{{old('ano', $presidente->ano)}}">
+                <input name="ano" type="integer" class="form-control" id="ano" value="{{old('ano', $presidente->ano)}}">
                 <label for="ano">Año</label>
             </div>
             <div class="form-floating mb-3">
-                <input name="fecha_nac" type="text" class="form-control" id="fecha_nac" value="{{old('fecha_nac', $presidente->fecha_nac)}}">
+                <input name="fecha_nac" type="date" class="form-control" id="fecha_nac" value="{{old('fecha_nac', $presidente->fecha_nac)}}">
                 <label for="fecha_nac">Fecha nacimiento</label>
             </div>
 
